@@ -360,6 +360,7 @@ def main():
 
     global args
     args = parser.parse_args()
+    args.port = int(args.port)  # Convert to integer
    
     if args.foreground :
         print_banner()
