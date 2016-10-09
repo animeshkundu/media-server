@@ -345,7 +345,7 @@ def print_banner() :
 def start() :
     global args
     serve_path = abspath(args.directory)
-    httpd = get_server(port=args.port, serve_path=serve_path)
+    httpd = get_server(port=int(args.port), serve_path=serve_path)
     httpd.serve_forever()
 
 
