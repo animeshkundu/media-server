@@ -356,7 +356,7 @@ def main():
     parser.add_argument("--foreground", "-f", action="store_true", help="Start the Media Server in the foreground")
     parser.add_argument("--stop", action="store_true", help="Stop the Media Server.")
     parser.add_argument("--restart", action="store_true", help="Restart the Media Server")
-    parser.add_argument("--pid", default="/tmp", help="Location to store the pid file")
+    parser.add_argument("--pidfile", default="/tmp/.py_media_server.pid", help="Pid file name with absolute path")
 
     global args
     args = parser.parse_args()
@@ -365,7 +365,7 @@ def main():
         print_banner()
         start()
     else :
-        daemon = Daemon(args.pid + "/py_video_server.pid")
+        daemon = Daemon(args.pidfile)
         if args.stop :
             print "Stopping Media Server running at http://%s:%d" % (get_ip_addr(), get_port())
             daemon.stop()
