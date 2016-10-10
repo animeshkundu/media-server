@@ -13,7 +13,6 @@ import socket
 import errno
 import glob
 import argparse
-import netifaces
 import BaseHTTPServer
 import SimpleHTTPServer
 
@@ -327,10 +326,8 @@ def get_server(port=1149, next_attempts=0, serve_path=None):
                 raise
 
 def get_ip_addr():
-    ips = [netifaces.ifaddresses(iface)[netifaces.AF_INET][0]['addr'] for iface in netifaces.interfaces() if netifaces.AF_INET in netifaces.ifaddresses(iface)]
-    for ip in ips :
-        if '127.0.0.1' not in ip :
-            return ip
+    ips = [ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")][:1]
+    return ips[0] if ips else '127.0.0.1'
 
 def get_port() :
     global args
