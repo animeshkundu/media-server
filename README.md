@@ -1,9 +1,9 @@
 HTTP Media Server for VLC
 =========================
 
-Me and my friends needed to watch movies and listen to songs wirelessly from a desktop which had all the hard disks attached to it. SMB, AFP were too much of a hassle to set up and not to mention slow, jittery performance. I am looking at you Mac OS. ( SMB 1 in 2016 ?) Hence the python script.
+We ( actually I and some of my friends ) needed to watch movies and listen to songs wirelessly from a desktop which has all the hard disks attached to it. SMB, AFP, etc were too much of a hassle to set up and not to mention slow, jittery performance. I am looking at you Mac OS ( SMB 1 in 2016 ?). Hence the python script.
 
-Shows vlc playlist directly in vlc. So that you can click and play :). Both random and incremental seek in vlc is supported. Playing directly in the browser is supported too.
+Shows the playlist directly in vlc. So that you can click and play :). Both random and incremental seek in vlc is supported. Playing directly in the browser is supported too.
 
 Has no dependencies other than python standard libary. Have fun!
 
@@ -36,3 +36,15 @@ optional arguments:
 
   --pid PID             Location to store the pid file
 
+
+Watch
+------
+Just run `vlc http://[ip-address of the machine running the service]:[1149 or the port the service is running at]/vlc`
+
+To play on a html5 enabled browser use http://[ip-address of the machine running the service]:[1149 or the port the service is running at]
+
+Misc
+----
+Hope it helps you as much as it helps us. Feel free to send pull requests to improve the script.
+
+Issues are welcome too. Most importantly have fun.
