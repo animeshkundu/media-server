@@ -5,12 +5,12 @@ We ( actually I and some of my friends ) needed to watch movies and listen to so
 
 Shows the playlist directly in vlc. So that you can click and play :). Both random and incremental seek in vlc is supported. Playing directly in the browser is supported too.
 
-Has no dependencies other than python standard libary. Have fun!
+Requires `netifaces` other than python standard libary. Have fun!
 
 
 Installation
 ------------
-Not required as there are no dependencies. :)
+pip install -r requirements.txt
 
 
 Usage
