@@ -41,10 +41,13 @@ Watch
 ------
 Just run `vlc http://[ip-address of the machine running the service]:[1149 or the port the service is running at]/vlc`
 
-To play on a html5 enabled browser use http://[ip-address of the machine running the service]:[1149 or the port the service is running at]
+To play on a html5 enabled browser use `http://[ip-address of the machine running the service]:[1149 or the port the service is running at]`
+
 
 Misc
 ----
-Hope it helps you as much as it helps us. Feel free to send pull requests to improve the script.
+Hope it helps you as much as it's helping us. 
 
-Issues are welcome too. Most importantly have fun.
+Issues and Pull Requests are welcome.
+
+But most importantly have fun.
