@@ -5,14 +5,12 @@ Me and my friends needed to watch movies and listen to songs wirelessly from a d
 
 Shows vlc playlist directly in vlc. So that you can click and play :). Both random and incremental seek in vlc is supported. Playing directly in the browser is supported too.
 
-I tried to minimize depedencies as much as possible. But I just couldn't do with netifaces. 
-
-Have fun!
+Has no dependencies other than python standard libary. Have fun!
 
 
 Installation
 ------------
-pip install -r requirements.txt
+Not required as there are no dependencies. :)
 
 
 Usage
