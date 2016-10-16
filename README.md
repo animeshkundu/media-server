@@ -7,7 +7,7 @@ Shows the playlist directly in vlc. So that you can click and play :). Both rand
 
 Requires `netifaces` other than python standard libary. Have fun!
 
-PyPi repsitory - [videopy](https://pypi.python.org/pypi/videopy/0.0.1)
+PyPi package - [videopy](https://pypi.python.org/pypi/videopy/0.0.1)
 
 Installation
 ------------
