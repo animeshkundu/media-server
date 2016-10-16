@@ -7,15 +7,16 @@ Shows the playlist directly in vlc. So that you can click and play :). Both rand
 
 Requires `netifaces` other than python standard libary. Have fun!
 
+PyPi repsitory - [videopy](https://pypi.python.org/pypi/videopy/0.0.1)
 
 Installation
 ------------
-pip install -r requirements.txt
+pip install videopy
 
 
 Usage
 -----
-video.py [-h] [--directory DIRECTORY] [--port PORT] [--foreground]
+videopy [-h] [--directory DIRECTORY] [--port PORT] [--foreground]
                 [--stop] [--restart] [--pid PID]
 
 
