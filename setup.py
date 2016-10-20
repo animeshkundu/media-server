@@ -9,16 +9,17 @@ except ImportError:
 
 setup(
     name='videopy',
-    version='0.0.1',
+    version='0.0.1.2',
     author='Animesh Kundu',
     description='HTTP Media Server for VLC',
     author_email='anik.edu@gmail.com',
-    scripts=[],
+    packages=['mediaserver'],
+    scripts=['video.py'],
     url='https://github.com/animeshkundu/media-server',
     license='LICENSE.txt',
     long_description=open('README.md').read(),
     install_requires=['netifaces==0.10.5'],
     entry_points={
-        'console_scripts': ['videopy = video:main']
+        'console_scripts': ['videopy = mediaserver.video:main']
     },
 )
