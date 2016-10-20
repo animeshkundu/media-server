@@ -14,7 +14,7 @@ setup(
     description='HTTP Media Server for VLC',
     author_email='anik.edu@gmail.com',
     packages=['mediaserver'],
-    scripts=['video.py'],
+    scripts=[],
     url='https://github.com/animeshkundu/media-server',
     license='LICENSE.txt',
     long_description=open('README.md').read(),
